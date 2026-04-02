@@ -1,0 +1,32 @@
+# =============================================================================
+# Websites to crawl (BFS from each base_url).
+# Edit this file — add/remove rows. Set enabled: false to skip a site.
+# After syncing, run:  python run.py crawl
+# HTML is sent to sports-data-backend when SPORTS_BACKEND_URL is set (see .env.example).
+# =============================================================================
+
+sites:
+  - name: ESPN
+    base_url: https://www.espn.com
+    sport: null
+    source_type: news
+    enabled: true
+
+  - name: BBC Sport
+    base_url: https://www.bbc.com/sport
+    sport: null
+    source_type: news
+    enabled: true
+
+  - name: Sky Sports
+    base_url: https://www.skysports.com
+    sport: null
+    source_type: news
+    enabled: true
+
+  # Add more rows below, e.g.:
+  # - name: Cricbuzz
+  #   base_url: https://www.cricbuzz.com
+  #   sport: Cricket
+  #   source_type: news
+  #   enabled: true

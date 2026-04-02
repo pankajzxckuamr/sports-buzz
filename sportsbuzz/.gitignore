@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+sports_buzz.db
+sports_buzz.db-*

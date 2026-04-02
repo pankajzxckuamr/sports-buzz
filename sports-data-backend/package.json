@@ -1,0 +1,37 @@
+{
+  "name": "sports-data-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "worker": "tsx src/workers/index.ts",
+    "worker:prod": "node dist/workers/index.js",
+    "db:migrate": "tsx src/db/migrate.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@elastic/elasticsearch": "^8.16.2",
+    "bullmq": "^5.34.5",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "ioredis": "^5.4.2",
+    "openai": "^4.77.3",
+    "pg": "^8.13.1",
+    "pino": "^9.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,27 @@
+# =============================================================================
+# Social accounts to fetch via official APIs (JSON → sports-data-backend ingest).
+# Set API keys in .env (see sportsbuzz/.env.example).
+#
+# Twitter/X: requires TWITTER_BEARER_TOKEN (Twitter API v2)
+# YouTube:    requires YOUTUBE_API_KEY (Google Cloud Console)
+# Instagram:  requires INSTAGRAM_ACCESS_TOKEN + numeric ig_user_id (Graph API)
+# =============================================================================
+
+twitter:
+  # X (Twitter) usernames — without @
+  - username: ESPN
+    enabled: false
+  # - username: NBA
+  #   enabled: true
+
+youtube:
+  # Channel IDs (UC...) from YouTube → Channel → About → Copy channel ID
+  - channel_id: ""
+    label: "Example Channel"
+    enabled: false
+
+instagram:
+  # Instagram Business/Creator — Graph API user id + token in .env
+  - ig_user_id: ""
+    label: "Example IG"
+    enabled: false
