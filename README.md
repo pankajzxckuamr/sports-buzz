@@ -150,9 +150,6 @@ docker-compose up
 - Multi-language support
 - Mobile application
 
-## 📄 License
-
-MIT License - feel free to use this project for your own purposes.
 
 ## 👤 Author
 
